@@ -4,11 +4,11 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 
 # Load the model and preprocessing objects
-model = joblib.load('D:/AML proj/random_forest_model.pkl')
-label_encoder = joblib.load('E:/aml/label_encoder.pkl')
-one_hot_encoder = joblib.load('E:/aml/one_hot_encoder.pkl')
-imputer_num = joblib.load('E:/aml/imputer_num.pkl')
-imputer_cat = joblib.load('E:/aml/imputer_cat.pkl')
+#model = joblib.load('random_forest_model.pkl')
+label_encoder = joblib.load('label_encoder.pkl')
+one_hot_encoder = joblib.load('one_hot_encoder.pkl')
+imputer_num = joblib.load('imputer_num.pkl')
+imputer_cat = joblib.load('imputer_cat.pkl')
 
 # Define a function for prediction
 def predict_vendor(size, purchase_price, dollars):
